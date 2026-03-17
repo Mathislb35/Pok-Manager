@@ -30,16 +30,16 @@ Le projet respecte les contraintes suivantes :
 # ⚙️ Technologies utilisées
 
 ### Backend
-- **Laravel**
-- **PHP**
-- **SQLite / MySQL**
+- ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+- ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+- ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 - **Eloquent ORM**
 
 ### Frontend
-- **Blade**
-- **TailwindCSS**
-- **Vite**
-- **Alpine.js**
+- ![Blade](https://img.shields.io/badge/Blade-FC4F4F?style=for-the-badge&logo=laravel&logoColor=white)
+- ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+- ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+- ![Alpine.js](https://img.shields.io/badge/Alpine.js-8BC0D0?style=for-the-badge&logo=alpine.js&logoColor=black)
 
 ### Authentification
 - **Laravel Breeze**
@@ -122,6 +122,41 @@ Il est également possible de :
 
 ---
 
+# ⚙️ Installation
+
+1. Cloner le dépôt :
+```
+git clone https://github.com/ton-username/pokemanager.git
+cd pokemanager/pockedeck
+```
+2. Installer les dépendances backend :
+```composer install```
+3. Installer les dépendances frontend :
+```npm install```
+4. Générer la clé de l'application :
+```php artisan key:generate```
+5. Configurer la base de données dans le fichier `.env`
+6. Lancer les migrations et seeders : ```php artisan migrate --seed```
+
+---
+
+# 🚀 Lancement
+
+1. Lancer le serveur Laravel :
+```
+php artisans serve
+```
+2. Lancer le serveur frontend (Vite):
+```
+npm run dev
+```
+3. Accéder à l'applcation :
+```
+http://127.0.0.1:8000
+```
+
+---
+
 # 🗂 Structure du projet
 
 Le projet suit l’architecture MVC de Laravel :
@@ -137,8 +172,7 @@ pokedeck/
 │ │ │ ├── DeckController.php
 │ │ │ ├── TypeController.php
 │ │ │ └── ProfileController.php
-    ├── Auth/ # Fichier d'authenfication Breeze
-      
+│ │ ├── Auth/ # Fichier d'authenfication Breeze
 │ │ │
 │ │ └── Middleware/
 │ │
@@ -156,7 +190,7 @@ pokedeck/
 │ ├── migrations/ # Création des tables
 │ ├── seeders/ # Remplissage automatique de la base
 │ └── factories/
-    └── UserFactory.php
+│    └── UserFactory.php
 │
 ├── data/
 │ └── csv/ # Dataset Pokémon provenant de Kaggle
@@ -193,8 +227,35 @@ pokedeck/
 │
 ├── tests/
 │
-├── .env.example
+└── .env.example
 ├── composer.json
 ├── package.json
 └── README.md
 ```
+
+---
+
+# 🚧 Améliorations possibles
+
+- Création de pokémons personnalisés
+- Ajout de filtres avancés (stats, génération, etc.)
+- Système de partage de decks entre utilisateurs
+- Ajout d’images officielles via API
+- Optimisation des performances (lazy loading, cache)
+- Ajout de tests automatisés
+- Amélioration de l’UI/UX (animations, transitions)
+
+---
+
+# 👤 Auteur
+
+**Mathis Lebreton-Béchu**
+`Étudiant en Bachelor Développeur Web`
+
+🔗 GitHub : https://github.com/Mathislb35
+
+---
+
+# 📄 Licence
+
+Ce projet est réalisé dans un cadre pédagogique et n’a pas vocation à être utilisé en production.
